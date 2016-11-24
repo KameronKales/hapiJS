@@ -1,0 +1,18 @@
+{
+  "name": "hapiapp",
+  "version": "0.0.1",
+  "description": "this is a test with hapi JS",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kameron",
+  "license": "ISC",
+  "dependencies": {
+    "good": "^7.0.2",
+    "good-console": "^6.3.1",
+    "good-squeeze": "^5.0.1",
+    "hapi": "^15.2.0",
+    "inert": "^4.0.2"
+  }
+}
