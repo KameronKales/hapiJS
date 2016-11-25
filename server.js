@@ -3,28 +3,20 @@
 const Hapi = require('hapi');
 
 const server = new Hapi.Server();
+const request = require('request');
+
 server.connection({ port: 3000 });
 
-server.route({
-    method: 'GET',
-    path: '/',
-    handler: function(request, reply) {
-        reply.file('index.html')
-    }
-});
+var plugins = [
+    require('./plugins/hello'),
+]
 
-server.register(require('inert'), (err) => {
-
+server.register(plugins, function(err) {
     if (err) {
-        throw err;
+        return console.error(err);
     }
 
-    server.start((err) => {
-
-        if (err) {
-            throw err;
-        }
-
-        console.log('Server running at:', server.info.uri);
-    });
+    server.start(function() {
+        console.log('Server Started')
+    })
 });

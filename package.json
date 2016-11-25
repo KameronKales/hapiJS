@@ -1,15 +1,16 @@
 {
-    "name": "hapiapp",
-    "version": "0.0.1",
-    "description": "this is a test with hapi JS",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "kameron",
-    "license": "ISC",
-    "dependencies": {
-        "hapi": "^15.2.0",
-        "inert": "^4.0.2"
-    }
+  "name": "hapiapp",
+  "version": "0.0.1",
+  "description": "this is a test with hapi JS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kameron",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^15.2.0",
+    "inert": "^4.0.2",
+    "request": "^2.79.0"
+  }
 }
